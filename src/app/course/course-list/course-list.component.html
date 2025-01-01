@@ -1,0 +1,8 @@
+<div>
+  <h2>Cursos</h2>
+  <input [(ngModel)]="newCourseName" placeholder="Nuevo curso" />
+  <button (click)="addCourse()">Añadir</button>
+</div>
+<ul>
+  <li *ngFor="let course of courses">{{ course.name }}</li>
+</ul>
