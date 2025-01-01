@@ -34,7 +34,7 @@ describe('CourseListComponent', () => {
     expect(component.courses.some(c => c.name === 'Java Fundamentals')).toBeTruthy();
   });
 
-  it('debería buscar cursos en carga', () => {
+  it('debería listar cursos en la carga inicial del componente', () => {
     spyOn(courseService, 'getCourses').and.returnValue(of([
       { id: 1, name: 'Test Course' }
     ]));
